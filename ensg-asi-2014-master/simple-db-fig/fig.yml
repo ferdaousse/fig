@@ -1,0 +1,8 @@
+dbserver:
+  image: "jamesbrink/postgresql:latest"
+  volumes:
+  - /vagrant:/vagrant
+  environment:
+    PGPASSWORD: postgres
+  ports:
+  - "5432:5432"
